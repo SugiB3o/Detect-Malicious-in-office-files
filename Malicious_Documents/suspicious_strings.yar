@@ -1299,6 +1299,7 @@ rule Misc_Suspicious_Strings
         $a4 = "cmd.exe" nocase ascii wide
         $a5 = "CWSandbox" nocase wide ascii // Found in some Zeus/Citadel samples
         $a6 = "System32\\drivers\\etc\\hosts" nocase wide ascii
+	$a7 = "mimikatz"
     condition:
         any of them
 }
